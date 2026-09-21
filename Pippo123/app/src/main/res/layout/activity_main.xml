@@ -9,7 +9,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="60sp"
+        android:layout_height="60dp"
         android:background="#3700ff"
         app:title="App di Benvenuto"
         app:titleTextColor="#FFFFFF"
@@ -20,7 +20,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="60sp">
+        android:layout_marginTop="60dp">
 
 
         <LinearLayout
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top"
             android:orientation="vertical"
-            android:padding="40sp">
+            android:padding="40dp">
             <TextView
                 android:id="@+id/benvenuto"
                 android:layout_width="wrap_content"
@@ -37,11 +37,11 @@
                 android:text="Benvenuto"
                 android:textColor="#3700ff"
                 android:textSize="50sp"
-                android:paddingBottom="80sp"/>
+                android:paddingBottom="80dp"/>
             <EditText
                 android:id="@+id/nome"
                 android:layout_width="match_parent"
-                android:layout_height="40sp"
+                android:layout_height="40dp"
                 android:hint="Inserisci il tuo nome"
                 tools:ignore="InvalidImeActionId" />
 
@@ -53,23 +53,23 @@
                 <Button
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="50sp"
+                    android:layout_height="50dp"
                     android:textSize="20sp"
                     android:text="CLICK"
                     app:cornerRadius="10dp"
                     android:onClick="mostraBenvenuto"
-                    android:layout_margin="5sp"
+                    android:layout_margin="5dp"
                     />
                 <Button
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="50sp"
+                    android:layout_height="50dp"
                     android:backgroundTint="#FF0000"
                     android:textSize="20sp"
                     android:text="CLEAR"
                     app:cornerRadius="10dp"
                     android:onClick="pulisciBenvenuto"
-                    android:layout_margin="5sp"
+                    android:layout_margin="5dp"
                     />
             </LinearLayout>
 
