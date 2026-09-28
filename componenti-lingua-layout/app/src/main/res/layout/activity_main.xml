@@ -21,6 +21,7 @@
             android:layout_gravity="center"
             android:textSize="30sp"/>
         <ImageView
+            android:id="@+id/avatar"
             android:layout_width="250dp"
             android:layout_height="250dp"
             android:layout_marginVertical="20dp"
@@ -35,9 +36,10 @@
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
-                android:text="Name:"
+                android:text="Name*:"
                 android:textSize="15sp"/>
             <EditText
+                android:id="@+id/inputName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Michael"
@@ -51,9 +53,10 @@
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
-                android:text="Email:"
+                android:text="Email*:"
                 android:textSize="15sp"/>
             <EditText
+                android:id="@+id/inputEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="michael@mail.com"
@@ -61,23 +64,33 @@
         </LinearLayout>
 
         <RadioGroup
+            android:id="@+id/radioGroupOptions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="3">
+            android:weightSum="4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Avatar*:"
+                android:textSize="15sp"/>
             <RadioButton
+                android:id="@+id/radioWoman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Woman"
                 android:textSize="15sp"
                 android:layout_weight="1"/>
             <RadioButton
+                android:id="@+id/radioMan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Man"
                 android:textSize="15sp"
                 android:layout_weight="1"/>
             <RadioButton
+                android:id="@+id/radioChild"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Child"
@@ -97,6 +110,7 @@
             android:layout_height="wrap_content"
             android:weightSum="2">
             <Button
+                android:id="@+id/buttonSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Save"
@@ -104,6 +118,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="#4FA14A"/>
             <Button
+                android:id="@+id/buttonClear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Clear"
